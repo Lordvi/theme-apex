@@ -130,15 +130,7 @@
           {% if is_tag %}
           <h4 class="sub-heading span6">Все статьи с меткой {{ tag }}:</h4>
           {% endif %}
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- expl-remont -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:600px"
-     data-ad-client="ca-pub-7494488769984810"
-     data-ad-slot="9643710840"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
           {% if posts %}
           {% for post in posts %}
           <div class="post span6">
@@ -149,15 +141,7 @@
               </div>
             </div>
             <div class="post-body" data-type-cleanup="true">
-             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Gosnikinpost -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:336px;height:280px"
-     data-ad-client="ca-pub-7494488769984810"
-     data-ad-slot="6442106048"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+             
               {{ post.content }}
               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- burshapgor -->
@@ -181,13 +165,22 @@
           {% endfor %}
           {% if not is_tag %}
           <div class="pagination span6">
-            {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; View Previous Posts</a>{% endif %}
-            {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">View More Posts &rarr;</a>{% endif %}
+            {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&larr; На предыдущую страницу</a>{% endif %}
+            {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">На следующую страницу &rarr;</a>{% endif %}
           </div>
           {% endif %}
           {% else %}
           <h4 class="sub-heading span6">Ничего нет :(</h4>
           {% endif %}
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- expl-remont -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-7494488769984810"
+     data-ad-slot="9643710840"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
       </div>
 
       {% elif post %}
