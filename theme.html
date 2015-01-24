@@ -13,7 +13,28 @@
 
     {{ header_meta }}
 
-    <link rel="stylesheet" type="text/css" href="{{ assets('css/style.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ assets('css/style.css') }}">
+<meta name="google-site-verification" content="z_1OqedAKwhxdfeAU6D-c_bcAq6pRqb4EGaSQLHBA78" />
+<meta name='wmail-verification' content='be7306c39ef40e55' />
+<meta name="msvalidate.01" content="01CBD6D7B22B7286288F6CF5A111D265" />
+<meta name='yandex-verification' content='64d1acd73cf6fe8f' />
+<meta name="sepool_verification" content="sepool_nb3jx6avlc81572q" />
+<link rel="shortcut icon" href="http://www.tdksp.kz/assets/templates/tdksp/images/t1.png">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>   
+ <!-- Rating@Mail.ru counter -->
+<script type="text/javascript">//<![CDATA[
+var _tmr = _tmr || [];
+_tmr.push({id: "2472136",  type: "pageView", start: (new Date()).getTime()});
+(function (d, w) {
+   var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true;
+   ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window);
+//]]></script><noscript><div style="position:absolute;left:-10000px;">
+<img src="//top-fwz1.mail.ru/counter?id=2472136;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" />
+</div></noscript>
+<!-- //Rating@Mail.ru counter -->
 
     <!--[if IE 7]>
       <link href="http://postach.io/static/themes/_assets/fontawesome/css/font-awesome-ie7.min.css" rel="stylesheet">
@@ -49,7 +70,21 @@
     })();
     </script>
     {% endif %}
+  
+    <form action="http://www.google.ru" id="cse-search-box">
+     <div>
+    <input type="hidden" name="cx" value="partner-pub-7494488769984810:7731453247" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="89" />
+    <input type="submit" name="sa" value="&#x041f;&#x043e;&#x0438;&#x0441;&#x043a;" />
+     </div>
+    </form>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">google.load("elements", "1", {packages: "transliteration"});</script>
+<script type="text/javascript" src="http://www.google.ru/coop/cse/brand?form=cse-search-box&amp;lang=ru"></script>
   </head>
+  
+  
   <body>
 
     {% if is_login %}
@@ -106,9 +141,35 @@
         <a class="logo" href="/">
           <img class="avatar" src="{{ site.avatar }}" alt="{{ site.author }}" width="100%" height="100%" />
         </a>
+  
+
+
         <div class="site-description">
           <ul>
+
+<li><a href="/">Главная</a></li>
+<li><a href="/reklama" class="inactive">Реклама</a></li>
+<li><a href="/voprosnik" class="inactive">Вопросник</a></li>
+<li><a href="/tag/ekonomika-predpriiatii-neftegazovoi-otrasli">Экономика предприятий нефтегазовой отрасли</a></li>
+<li><a href="/tag/politologiia">Политология</a></li>
+<li><a href="/tag/gidromashiny-i-kompressory">Гидромашины и компрессоры</a></li>
+<li><a href="/tag/gidravlika">Гидравлика</a></li>
+<li><a href="/tag/ekologiia">Экология</a></li>
+<li><a href="/tag/istoriia">История</a></li>
+<li><a href="/tag/dobycha-nefti-i-gaza">Добыча нефти и газа</a></li>
+<li><a href="/tag/vysshaia-matematika">Высшая математика</a></li>
+<li><a href="/tag/nachertalka">Начертательная геометрия</a></li>
+<li><a href="/tag/burenie">Бурение</a></li>
+<li><a href="/tag/etika">Этика</a></li>
+<li><a href="/tag/referat">Рефераты</a></li>
+<li><a href="/tag/testy">Тесты</a></li>
+<li><a href="/tag/otvety">Ответы</a></li>
+<li><a href="/tag/mashiny-i-oborudovanie-neftianykh-i-gazovykh-promyslov">Машины и оборудование нефтяных и газовых промыслов</a></li>
+<li><a href="/tag/kak-napisat-diplom">Как написать диплом?</a></li>
+<li><a href="/tag/operator-po-dobyche-nefti-i-gaza"> Оператор по добыче нефти</a></li>   
+          
           <li><a href="/">Архив</a></li>
+          
           {% if pages %}
           {% for page in pages %}
           <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
@@ -155,7 +216,7 @@
             </div>
             <div class="post-info">
               <div class="info-left">
-                <p class="date">{{ post.created_at|format_date }}</p>
+                <p class="date">{{ post.created_at }}</p>
               </div>
               <div class="info-right">
                 <p class="read-more"><a href="{{ post.permalink }}">Читать &raquo;</a></p>
@@ -190,17 +251,17 @@
           <h1>{{ post.title }}</h1>
           <div class="post-info">
             <div class="info-left">
-              <p class="date">{{ post.created_at|format_date }}</p>
+              <p class="date">{{ post.created_at }}</p>
             </div>
             <div class="info-right">
               <p class="comments">
-                <a href="/"><i class="icon-comment"></i> 0</a>
+                <a href="/"><i class="icon-comment"></i> 1495</a>
               </p>
             </div>
           </div>
           <div class="post-body">
             <div class="post-content" data-type-cleanup="true">
-              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- burshapgor -->
 <ins class="adsbygoogle"
      style="display:inline-block;width:728px;height:90px"
@@ -210,7 +271,7 @@
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
               {{ post.content }}
-              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 <!-- burshapgor -->
 <ins class="adsbygoogle"
      style="display:inline-block;width:728px;height:90px"
@@ -236,7 +297,7 @@
             {% endif %}
           </div>
           <div class="post-footer">
-            <p class="back"><a href="/">&laquo; Go Back</a></p>
+            <p class="back"><a href="/">&laquo; Назад</a></p>
           </div>
           {% if site.disqus %}
           <div class="post-comments">
@@ -264,7 +325,7 @@
             {{ page.content }}
           </div>
           <div class="post-footer">
-            <p class="back"><a href="/">&laquo; Go Back</a></p>
+            <p class="back"><a href="/">&laquo; Назад</a></p>
           </div>
         </div>
       </div>
@@ -274,7 +335,110 @@
     </div>
 
     {% endif %}
+      Воспользуйтесь поиском по сайту
+      <form action="http://www.google.ru" id="cse-search-box">
+     <div>
+    <input type="hidden" name="cx" value="partner-pub-7494488769984810:7731453247" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="89" />
+    <input type="submit" name="sa" value="&#x041f;&#x043e;&#x0438;&#x0441;&#x043a;" />
+     </div>
+    </form>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">google.load("elements", "1", {packages: "transliteration"});</script>
+<script type="text/javascript" src="http://www.google.ru/coop/cse/brand?form=cse-search-box&amp;lang=ru"></script>
 
+      <div style="overflow: hidden;"><a href="http://www.yandex.ru?add=164655&amp;from=promocode" target="_blank"><img style="float: left; padding: 0 10px 10px 0;" src="http://wi.yandex.net/02/83/t-164655.jpg" alt="" border="0"/></a><div style="margin:7px 0 0 160px;"><h3 style="margin-top: 0px;"><a href="http://www.yandex.ru?add=164655&amp;from=promocode" target="_blank" style="color:#000;">Нефтяное оборудование</a></h3><p>Все что касается машин и оборудования для добычи и нефти газа. Справочные, учебные материалы, рефераты, бесплатно</p><a style="display: block; margin-top: 0.5em;border:none;" target="_blank" href="http://www.yandex.ru?add=164655&amp;from=promocode"><img border="0" src="http://img.yandex.net/i/service/wdgt/b-wdgt-add-button_lang_ru.png" alt="добавить на Яндекс"/></a></div></div>
+      
+      <nav id="nav">
+<ul>
+<li><a href="/">Главная</a></li>
+              
+              
+              <li><a href="/reklama" class="inactive">Реклама</a></li>
+              
+              <li><a href="/voprosnik" class="inactive">Вопросник</a></li>
+              
+              
+<li><a href="/tag/ekonomika-predpriiatii-neftegazovoi-otrasli">Экономика предприятий нефтегазовой отрасли</a></li>
+ <li><a href="/tag/politologiia">Политология</a></li>
+  <li><a href="/tag/gidromashiny-i-kompressory">Гидромашины и компрессоры</a></li>
+   <li><a href="/tag/gidravlika">Гидравлика</a></li>
+    <li><a href="/tag/ekologiia">Экология</a></li>
+     <li><a href="/tag/istoriia">История</a></li>
+      <li><a href="/tag/dobycha-nefti-i-gaza">Добыча нефти и газа</a></li>
+       <li><a href="/tag/vysshaia-matematika">Высшая математика</a></li>
+        <li><a href="/tag/nachertalka">Начертательная геометрия</a></li>
+         <li><a href="/tag/burenie">Бурение</a></li>
+          <li><a href="/tag/etika">Этика</a></li>
+          <li><a href="/tag/referat">Рефераты</a></li>
+          <li><a href="/tag/testy">Тесты</a></li>
+          <li><a href="/tag/otvety">Ответы</a></li>
+           <li><a href="/tag/mashiny-i-oborudovanie-neftianykh-i-gazovykh-promyslov">Машины и оборудование нефтяных и газовых промыслов</a></li>
+   <li><a href="/tag/kak-napisat-diplom">Как написать диплом?</a></li>
+   <li><a href="/tag/operator-po-dobyche-nefti-i-gaza"> Оператор по добыче нефти</a></li> 
+</ul>
+</nav>
+
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t25.1;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число посетителей за"+
+" сегодня' "+
+"border='0' width='88' height='15'><\/a>")
+//--></script><!--/LiveInternet-->
+<!-- begin of Top100 code -->
+
+<a href="http://top100.rambler.ru/navi/3022596/">
+<img src="http://counter.rambler.ru/top100.cnt?3022596" alt="Rambler's Top100" border="0" />
+</a>
+
+<!-- end of Top100 code -->
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=24785309&amp;from=informer"
+target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/24785309/1_1_FFFFFFFF_EFEFEFFF_0_uniques"
+style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (уникальные посетители)" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter24785309 = new Ya.Metrika({id:24785309,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/24785309" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Rating@Mail.ru logo -->
+<a target="_blank" href="http://top.mail.ru/jump?from=2472136">
+<img src="//top-fwz1.mail.ru/counter?id=2472136;t=364;l=1" 
+border="0" height="18" width="88" alt="Рейтинг@Mail.ru"></a>
+<!-- //Rating@Mail.ru logo -->
+<a href="http://yandex.ru/cy?base=0&amp;host=gosnik.postach.io"><img src="http://www.yandex.ru/cycounter?gosnik.postach.io" width="88" height="31" alt="Яндекс цитирования" border="0" /></a>.
+<div class="copyright"><p class="center">Все права защищены &copy; <a href="/">Машины и оборудование нефтяных и газовых промыслов</a>.</p>
+</div>
     {{ footer_meta }}
 
     <!-- bootstrap -->
